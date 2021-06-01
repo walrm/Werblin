@@ -50,7 +50,7 @@ def sign_up():
      elem = browser.find_elements_by_id("rbtnYes")
      for e in elem:
           e.click()
-     browser.find_element_by_xpath("/html/body/div[3]/div[1]/div[2]/form[2]/div[7]/button[2]").click()
+     browser.find_element_by_xpath("/html/body/div[3]/div[1]/div[2]/form[2]/div[6]/button[2]").click()
      time.sleep(3)
 
      #Checkout process

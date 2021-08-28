@@ -5,7 +5,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 times = []
-url = 'https://services.rec.rutgers.edu/Program/GetProgramDetails?courseId=694b3079-a4f9-4988-94d5-6374f9d3fe40&semesterId=61d7fedd-4078-466e-afda-7003ce3123ac'
+#Werblin Sniper
+#url = 'https://services.rec.rutgers.edu/Program/GetProgramDetails?courseId=694b3079-a4f9-4988-94d5-6374f9d3fe40&semesterId=61d7fedd-4078-466e-afda-7003ce3123ac'
+
+#College Avenue Gym
+url = 'https://services.rec.rutgers.edu/Program/GetProgramDetails?courseId=16f6ea9c-fb20-42d0-afdd-b08fca2bec1f&semesterId=3302ba85-8b33-4145-b755-2d709e0ec9ef'
 selection = ""
 
 def get_updates():
@@ -47,10 +51,9 @@ def sign_up():
      time.sleep(2)
 
      #click all radio buttons and then click checkout
-     elem = browser.find_elements_by_id("rbtnYes")
-     for e in elem:
-          e.click()
-     browser.find_element_by_xpath("/html/body/div[3]/div[1]/div[2]/form[2]/div[6]/button[2]").click()
+     elem = browser.find_element_by_id("rbtnYes")
+     elem.click();
+     browser.find_element_by_xpath('/html/body/div[3]/div[1]/div[2]/form[2]/div[2]/button[2]').click()
      time.sleep(3)
 
      #Checkout process
